@@ -1,0 +1,157 @@
+:host { 
+  display: contents; 
+}
+ 
+.hero-header78 {
+  gap: var(--dl-layout-space-threeunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.hero-column {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+}
+ 
+.hero-content1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero-text1 {
+  text-align: center;
+}
+ 
+.hero-text2 {
+  text-align: center;
+}
+ 
+.hero-actions {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-layout-space-unit);
+}
+ 
+.hero-content2 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.hero-row-container1 {
+  width: 100%;
+}
+ 
+.hero-placeholder-image10,
+.hero-placeholder-image11,
+.hero-placeholder-image12,
+.hero-placeholder-image13,
+.hero-placeholder-image14,
+.hero-placeholder-image15,
+.hero-placeholder-image16,
+.hero-placeholder-image17,
+.hero-placeholder-image18,
+.hero-placeholder-image19,
+.hero-placeholder-image20,
+.hero-placeholder-image21,
+.hero-placeholder-image22,
+.hero-placeholder-image23,
+.hero-placeholder-image24,
+.hero-placeholder-image25,
+.hero-placeholder-image26,
+.hero-placeholder-image27,
+.hero-placeholder-image28,
+.hero-placeholder-image29,
+.hero-placeholder-image30,
+.hero-placeholder-image31,
+.hero-placeholder-image32,
+.hero-placeholder-image33 {
+  width: 400px;
+  height: 400px;
+}
+
+.hero-row-container2 {
+  width: 100%;
+}
+
+.hero-container2 {
+  display: contents;
+}
+
+@media(max-width: 767px) {
+  .hero-content2 {
+    width: 100%;
+  }
+}
+
+@media(max-width: 479px) {
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-button1,
+  .hero-button2 {
+    width: 100%;
+  }
+}
+
+/* Animation styles added here */
+.thq-animated-group-container-horizontal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.thq-animated-group-horizontal,
+.thq-animated-group-horizontal-reverse {
+  display: flex;
+  width: max-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.thq-animated-group-horizontal {
+  animation-name: scroll-horizontal;
+  animation-duration: 20s;
+}
+
+.thq-animated-group-horizontal-reverse {
+  animation-name: scroll-horizontal-reverse;
+  animation-duration: 19s;
+}
+
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-horizontal-reverse {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
