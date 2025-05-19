@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, ContentChild, TemplateRef } from '@angular/core'
 
 @Component({
   selector: 'app-contact',
@@ -9,6 +9,8 @@ export class Contact {
   @Input()
   content4: string =
     'Stay connected with us on social media for updates and more.'
+  @ContentChild('address')
+  address: TemplateRef<any>
   @Input()
   heading1: string = 'Contact Us'
   @Input()
@@ -21,8 +23,6 @@ export class Contact {
   content2: string = 'Feel free to drop us a message or give us a call.'
   @Input()
   content3: string = 'Our team is ready to assist you.'
-  @Input()
-  address1: string = '123 Innovation Street, Cityville, Country'
   @Input()
   content1: string =
     'We would love to hear from you. Reach out to us for any inquiries or to start a project.'

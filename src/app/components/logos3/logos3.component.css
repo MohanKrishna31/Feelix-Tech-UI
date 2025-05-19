@@ -1,0 +1,151 @@
+:host { 
+  display: contents; 
+}
+ 
+.logos3-container1 {
+  position: relative;
+}
+ 
+.logos3-max-width {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.logos3-container2 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.logos3-text2 {
+  text-align: center;
+}
+ 
+.logos3-logo1 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo1:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo2 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo2:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo3 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo3:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo4 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo4:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo5 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo5:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo6 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo6:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo7 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo7:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo8 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo8:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo9 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo9:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-logo10 {
+  object-fit: contain;
+  transition: 0.3s;
+}
+ 
+.logos3-logo10:hover {
+  transform: scale3d(1.1,1.1,1.1);
+}
+ 
+.logos3-fragment1 {
+  display: contents;
+}
+ 
+.logos3-text3 {
+  display: inline-block;
+}
+ 
+.logos3-fragment2 {
+  display: contents;
+}
+ 
+.logos3-text6 {
+  display: inline-block;
+}
+ 
+@media(max-width: 1200px) {
+  .logos3-container2 {
+    width: 900px;
+  }
+}
+ 
+@media(max-width: 991px) {
+  .logos3-container2 {
+    margin-bottom: var(--dl-layout-space-threeunits);
+  }
+}
+ 
+@media(max-width: 767px) {
+  .logos3-container2 {
+    margin-bottom: var(--dl-layout-space-oneandhalfunits);
+  }
+}

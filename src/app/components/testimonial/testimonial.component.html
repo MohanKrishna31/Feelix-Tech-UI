@@ -2,7 +2,21 @@
   <div class="testimonial-max-width thq-section-max-width">
     <div class="testimonial-container10">
       <h2 class="thq-heading-2">{{ heading1 }}</h2>
-      <span class="testimonial-text11 thq-body-small">{{ content1 }}</span>
+      <span class="testimonial-text11 thq-body-small">
+        <ng-container>
+          <ng-template #defaultText>
+            <div class="testimonial-fragment">
+              <span class="testimonial-text24">
+                See what our clients have to say about their experience working
+                with Feelix Consultancy Services Limited.
+              </span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="text ? text : defaultText"
+          ></ng-container>
+        </ng-container>
+      </span>
     </div>
     <div class="thq-grid-2">
       <div class="thq-animated-card-bg-2">

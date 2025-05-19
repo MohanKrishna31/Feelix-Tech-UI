@@ -4,7 +4,7 @@
       <span class="thq-body-small">{{ content2 }}</span>
       <div class="contact-content1">
         <h2 class="thq-heading-2">{{ heading1 }}</h2>
-        <p class="contact-text3 thq-body-large">{{ content1 }}</p>
+        <p class="contact-text12 thq-body-large">{{ content1 }}</p>
       </div>
     </div>
     <div class="contact-row">
@@ -16,8 +16,8 @@
         </svg>
         <div class="contact-contact-info1">
           <div class="contact-content3">
-            <h3 class="contact-text4 thq-heading-3">Email</h3>
-            <p class="contact-text5 thq-body-large">{{ content3 }}</p>
+            <h3 class="contact-text13 thq-heading-3">Email</h3>
+            <p class="contact-text14 thq-body-large">{{ content3 }}</p>
           </div>
           <span class="contact-email thq-body-small">{{ email1 }}</span>
         </div>
@@ -30,8 +30,8 @@
         </svg>
         <div class="contact-contact-info2">
           <div class="contact-content5">
-            <h3 class="contact-text6 thq-heading-3">Phone</h3>
-            <p class="contact-text7 thq-body-large">{{ content4 }}</p>
+            <h3 class="contact-text15 thq-heading-3">Phone</h3>
+            <p class="contact-text16 thq-body-large">{{ content4 }}</p>
           </div>
           <span class="contact-phone thq-body-small">{{ phone1 }}</span>
         </div>
@@ -44,10 +44,23 @@
         </svg>
         <div class="contact-contact-info3">
           <div class="contact-content7">
-            <h3 class="contact-text8 thq-heading-3">Office</h3>
-            <p class="contact-text9 thq-body-large">{{ content5 }}</p>
+            <h3 class="contact-text17 thq-heading-3">Office</h3>
+            <p class="contact-text18 thq-body-large">{{ content5 }}</p>
           </div>
-          <span class="contact-address thq-body-small">{{ address1 }}</span>
+          <span class="contact-address thq-body-small">
+            <ng-container>
+              <ng-template #defaultAddress>
+                <div class="contact-fragment">
+                  <span class="contact-text19">
+                    123 Innovation Street, Cityville, Country
+                  </span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="address ? address : defaultAddress"
+              ></ng-container>
+            </ng-container>
+          </span>
         </div>
       </div>
     </div>

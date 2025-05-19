@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, ContentChild, TemplateRef } from '@angular/core'
 
 @Component({
   selector: 'app-testimonial',
@@ -11,9 +11,6 @@ export class Testimonial {
     'https://images.unsplash.com/photo-1568822617270-2c1579f8dfe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTMzNzQ0N3w&ixlib=rb-4.0.3&q=80&w=1080'
   @Input()
   author1Position: string = 'CEO, Tech Co.'
-  @Input()
-  content1: string =
-    'See what our clients have to say about their experience working with Feelix Consultancy Services Limited.'
   @Input()
   review3: string =
     'We are extremely satisfied with the software solutions delivered by Feelix Consultancy Services Limited. Their ability to tailor solutions to our specific needs was impressive, and we look forward to future collaborations.'
@@ -54,6 +51,8 @@ export class Testimonial {
   author3Alt: string = 'Image of David Johnson'
   @Input()
   author1Alt: string = 'Image of John Doe'
+  @ContentChild('text')
+  text: TemplateRef<any>
   @Input()
   author4Position: string = 'CMO, Marketing Experts Co.'
   @Input()

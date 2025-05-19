@@ -129,6 +129,14 @@
   text-align: left;
 }
  
+.testimonial-fragment {
+  display: contents;
+}
+ 
+.testimonial-text24 {
+  display: inline-block;
+}
+ 
 @media(max-width: 991px) {
   .testimonial-container10 {
     margin-bottom: var(--dl-layout-space-threeunits);

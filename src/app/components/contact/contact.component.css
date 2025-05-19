@@ -35,7 +35,7 @@
   flex-direction: column;
 }
  
-.contact-text3 {
+.contact-text12 {
   text-align: center;
 }
  
@@ -71,12 +71,12 @@
   flex-direction: column;
 }
  
-.contact-text4 {
+.contact-text13 {
   align-self: stretch;
   text-align: center;
 }
  
-.contact-text5 {
+.contact-text14 {
   text-align: center;
 }
  
@@ -109,12 +109,12 @@
   flex-direction: column;
 }
  
-.contact-text6 {
+.contact-text15 {
   align-self: stretch;
   text-align: center;
 }
  
-.contact-text7 {
+.contact-text16 {
   text-align: center;
 }
  
@@ -147,17 +147,25 @@
   flex-direction: column;
 }
  
-.contact-text8 {
+.contact-text17 {
   align-self: stretch;
   text-align: center;
 }
  
-.contact-text9 {
+.contact-text18 {
   text-align: center;
 }
  
 .contact-address {
   text-align: center;
+}
+ 
+.contact-fragment {
+  display: contents;
+}
+ 
+.contact-text19 {
+  display: inline-block;
 }
  
 @media(max-width: 767px) {
